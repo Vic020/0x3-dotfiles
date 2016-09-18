@@ -34,6 +34,7 @@ Plugin 'scrooloose/nerdTree'
 Plugin 'Valloric/YouCompleteMe'
 
 
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -79,7 +80,7 @@ set nobackup                    " do not keep a backup file
 set novisualbell                " turn off visual bell
 set noerrorbells                " don't beep
 set visualbell t_vb=            " turn off error beep/flash
-set t_vb=
+set vb t_vb=
 set tm=500
 
 
@@ -306,10 +307,19 @@ cnoremap <C-e> <End>
 
 if has("gui_running")
 "au GUIEnter * simalt ~x " 窗口启动时自动最大化
-"set guioptions-=m " 隐藏菜单栏
+set guioptions-=m " 隐藏菜单栏
 set guioptions-=T " 隐藏工具栏
 "set guioptions-=L " 隐藏左侧滚动条
 "set guioptions-=r " 隐藏右侧滚动条
 "set guioptions-=b " 隐藏底部滚动条
 "set showtabline=0 " 隐藏Tab栏
 endif
+
+" auto start NEADTree
+
+autocmd VimEnter * NERDTree
+wincmd w
+autocmd VimEnter * wincmd w
+set vb t_vb=
+set noswapfile
+let g:ycm_python_binary_path = 'python'
