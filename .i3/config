@@ -181,7 +181,7 @@ bar {
 
 # startup
 exec --no-startup-id xautolock -time 10 -locker 'i3lock -d -c 000000'
-exec --no-startup-id i3-msg 'workspace 10:other; exec /usr/bin/ss-qt5'
-exec --no-startup-id i3-msg 'workspace 10:other; exec /home/vic/.nutstore/dist/bin/nutstore-pydaemon.py'
+exec --no-startup-id i3-msg 'workspace 10 other; exec /usr/bin/ss-qt5'
+exec --no-startup-id i3-msg 'workspace 10 other; exec /home/vic/.nutstore/dist/bin/nutstore-pydaemon.py'
 exec --no-startup-id i3-msg 'workspace 3 WWW; exec /usr/bin/google-chrome'
 exec --no-startup-id i3-msg 'workspace 4 GFX; exec /usr/bin/nautilus'
