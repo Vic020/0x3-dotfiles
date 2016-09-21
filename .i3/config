@@ -99,11 +99,11 @@ bindsym $mod+a focus parent
         set $ws2 term
         set $ws3 WWW
         set $ws4 GFX
-        set $ws5 mind 
+        set $ws5 Mind 
         set $ws6 ♪ ♫
-        set $ws7 c0de
+        set $ws7 More
         set $ws8 server
-        set $ws9 ↓load
+        set $ws9 win
         set $ws10 other
 
     # Switch To Workspace
@@ -185,4 +185,4 @@ exec --no-startup-id i3-msg 'workspace 10 other; exec /usr/bin/ss-qt5'
 exec --no-startup-id i3-msg 'workspace 10 other; exec /home/vic/.nutstore/dist/bin/nutstore-pydaemon.py'
 exec --no-startup-id i3-msg 'workspace 3 WWW; exec /usr/bin/google-chrome'
 exec --no-startup-id i3-msg 'workspace 4 GFX; exec /usr/bin/nautilus'
-exec --no-startup-id i3-msg 'workspace 4 GFX; exec /usr/bin/synergy'
+exec --no-startup-id i3-msg 'workspace 10 other; exec /usr/bin/synergy'
