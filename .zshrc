@@ -50,7 +50,7 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git d ls tmux docker pip)
+plugins=(git d ls tmux docker )
 
 # User configuration
 
@@ -84,6 +84,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -alF'
+alias cls='clear'
 
 export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
