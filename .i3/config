@@ -13,11 +13,12 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+# font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+# font pango:DejaVu Sans Mono 8
+font pango:Sans Regular 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -99,11 +100,11 @@ bindsym $mod+a focus parent
         set $ws2 term
         set $ws3 WWW
         set $ws4 GFX
-        set $ws5 Mind 
+        set $ws5 mind 
         set $ws6 ♪ ♫
-        set $ws7 More
+        set $ws7 c0de
         set $ws8 server
-        set $ws9 win
+        set $ws9 ↓load
         set $ws10 other
 
     # Switch To Workspace
@@ -185,4 +186,4 @@ exec --no-startup-id i3-msg 'workspace 10 other; exec /usr/bin/ss-qt5'
 exec --no-startup-id i3-msg 'workspace 10 other; exec /home/vic/.nutstore/dist/bin/nutstore-pydaemon.py'
 exec --no-startup-id i3-msg 'workspace 3 WWW; exec /usr/bin/google-chrome'
 exec --no-startup-id i3-msg 'workspace 4 GFX; exec /usr/bin/nautilus'
-exec --no-startup-id i3-msg 'workspace 10 other; exec /usr/bin/synergy'
+exec --no-startup-id i3-msg 'workspace 10 other;exec /usr/bin/synergy'
